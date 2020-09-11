@@ -1,0 +1,179 @@
+<html>
+	<head>
+			<link href="CSS.css" rel="stylesheet"/>
+			<script src="myscripts.js"></script>
+	</head>
+	<body>
+		<div id="site_wrap">
+			<div id="center">
+				<div id="header">
+					<div id="logo">
+						<img src="images/Mukand.jpg" width="220px" height="70px"/>
+					</div>
+					<div id="header_menus">
+						<ul>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">OUR TEAM</a></li>
+							<li><a href="#">UPDATES</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</div>
+					<div id="Search">
+						<input type="image" src="images/search.jpg" width=80px height=70px/>
+					</div>
+				</div>
+			</div>
+			<div id="center1">
+				<div id="Slider">
+					<img name="slide" src="images/timt1.jpg" width="1500px" height="650px"/>
+				</div>
+				<script>
+					var step=1;
+					function aa()
+					{
+						if(!document.images)
+						return;
+						document.images.slide.src=eval("timt"+step+".src");
+						if(step<6)
+						{
+							step++;
+						}
+						else
+						{
+							step=1;
+						}
+						setTimeout("aa()",4000);
+					}
+					aa()
+				</script>
+				<div id="Content">
+					<div id="Leftbar">
+							<h1>One Way stop for notes and more</h1>
+							<h2>NOTICES</h2>
+							<p>Check out the latest notices being published by TIMT institute.
+							Get all important notices of your college anytime.
+							</p>
+							<h2>NOTES</h2>
+							<p style="text-align:justify">Find the notes and previous years examination 
+							papers for all semesters of BCA,MCA,BBA,MBA.Additionaly,class asssignments 
+							and lab work to get you going for that perfect grade.
+							</p>
+							<h2>FACULTY AND SOCITIES AT TIMT</h2>
+							<p>Myriad of societies and our experienced faculty make TIMT what it is.
+							Read on to find out about your honorable professors, society events 
+							and much more!A single platform that presents latest technological releases,
+							thought provoking poetries and the latest trends in the campus.
+							</p>
+					</div>
+					<div id="Rightbar">
+						<div id="B">
+							<div id="S1">
+								<img src="images/search.jpg" width=50px height=50px/>
+							</div>
+							<div id="S2">
+								<h1>Search for notes</h1>
+							</div>
+						</div>
+						<br/>
+						<hr/>
+						<div>
+							<table cellpadding=10 cellspacing=20 id="table">
+								<tr>
+									<td>
+										<select id="Depart">
+											<option value="">----------Select Department-----------</option>
+											<option value="BBA">BBA</option>
+											<option value="MBA">MBA</option>
+											<option value="BCA">BCA</option>
+											<option value="MCA">MCA</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select id="Semester">
+											<option value="">------------Select Semester------------</option>
+											<option value="1st">1st Semester</option>
+											<option value="2nd">2nd Semester</option>
+											<option value="3rd">3rd Semester</option>
+											<option value="4th">4th Semester</option>
+											<option value="5th">5th Semester</option>
+											<option value="6th">6th Semester</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<select id="Subjects">
+											<option value="">--------------Select subject--------------</option>
+											<option value="C++">C++</option>
+											<option value="DS">Data Structures</option>
+											<option value="CA">Computer Architecture</option>
+											<option value="DBMS">DBMS</option>
+											<option value="SE">Software Engineering</option>
+											<option value="NA">Numerical Analysis</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<input type="button" value="CHECK NOTES" onclick="bb()" id="button"/>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Center2">
+				<div id="G">
+					<h1>Latest on TIMT updates</h1>
+					<input type="button" value="View all updates" id="J"/><br/><br/><br/><hr/>
+					<h1>See toppers</h1>
+					<input type="button" value="See our toppers" id="K"/>
+				</div>
+			</div>
+			<div id="Center3">
+				<div id="First">
+					<h1>ABOUT US</h1>
+					<img src="images/Mukand.jpg" width="220px" height="70px" style="margin:20px 0px 0px 20px;"/>
+					<p>
+					Mukand,the Socio-Academic Portal of TIMT, is the most frequently visited 
+					website of TIMT. It was started out by a team of two enthusiastic students (DHEERAJ
+					& VARUN) with an aim to provide a holistic solution to all student needs; those that 
+					are encountered during these three crucial years of college. 
+					In short - We aim to make the life of every TIMTian simpler & turn these three years 
+					into a smoother ride!
+					</p><br/><hr/>
+					<div class="M">
+					<img src="images/location.jpg" width=30px height=30px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">TIMT,YAMUNA NAGAR</div>
+					<br/><br/><br/><br/><hr style="clear:both"/>
+					<div class="M">
+					<img src="images/call.jpg" width=30px height=30px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">Call Us: 01732-22457</div>
+					<br/><br/><br/><br/><hr style="clear:both"/>
+					<div class="M">
+					<img src="images/message.jpg" width=40px height=40px style="margin:20px 0px 0px 20px"/>
+					</div>
+					<div class="N" style="color:white">vikas.daryal@timt.ac.in</div>
+					<br/><br/><br/><br/><hr style="clear:both"/>
+				</div>
+				<div id="Second">
+					<h1>Quick Links</h1>
+					<ul>
+						<li><a href="#">Notices</a></li>
+						<li><a href="#">Datesheets</a></li>
+						<li><a href="#">Results</a></li>
+						<li><a href="#">Notes</a></li>
+						<li><a href="#">Exam papers</a></li>
+						<li><a href="#">Syllabus</a></li>
+						<li><a href="#">Copyright</a></li>
+						<li><a href="#">Disclamer</a></li>
+					</ul>
+				</div>
+			</div>
+	</body>
+</html>

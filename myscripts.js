@@ -10,6 +10,22 @@
 			timt4.src="images/timt4.jpg";
 			timt5.src="images/timt5.jpg";
 			timt6.src="images/timt6.jpg";
+			var step=1;
+					function aa()
+					{
+						if(!document.images)
+						return;
+						document.images.slide.src=eval("timt"+step+".src");
+						if(step<6)
+						{
+							step++;
+						}
+						else
+						{
+							step=1;
+						}
+						setTimeout("aa()",4000);
+					}
 			function bb()
 			{
 				var error="";

@@ -4,12 +4,12 @@
 			var timt4=new Image();
 			var timt5=new Image();
 			var timt6=new Image();
-			timt1.src="images/timt1.jpg";
-			timt2.src="images/timt2.jpg";
-			timt3.src="images/timt3.jpg";
-			timt4.src="images/timt4.jpg";
-			timt5.src="images/timt5.jpg";
-			timt6.src="images/timt6.jpg";
+			timt1.src="timt1.jpg";
+			timt2.src="timt2.jpg";
+			timt3.src="timt3.jpg";
+			timt4.src="timt4.jpg";
+			timt5.src="timt5.jpg";
+			timt6.src="timt6.jpg";
 			var step=1;
 					function aa()
 					{
